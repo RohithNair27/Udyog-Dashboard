@@ -1,6 +1,7 @@
 <script>
 import ButtonComponent from '../../components/ButtonComponent.vue';
 import InputField from '../../components/InputField.vue';
+import { RouterLink, RouterView } from "vue-router";
 
 export default{
   components:{
@@ -21,15 +22,16 @@ export default{
         <h1 style="color:#FFC834;margin-right: 10px">उद्योग</h1>
         <h1>Admin</h1>
       </section>
-      <span>Let's get back at it</span>
+      <span>Welcome! Let's create your account</span>
     </div>
       <section class="form-inputField-container">
-      <InputField :placeHolder="'Enter your Personal ID'" :lable="'Personal ID'" :icon="'fa-user'" :type="'text'"/>
-      <InputField :placeHolder="'Enter password'" :lable="'Password'" :icon="'fa-lock'" :type="'password'"/>
+      <InputField :placeHolder="'Enter your name'" :lable="'Personal ID'" :icon="'fa-user'" :type="'text'"/>
+      <InputField :placeHolder="'Enter email'" :lable="'Email ID'" :icon="'fa-lock'" :type="'email'"/>
+
       </section>
       <section class="form-button-container">
         <ButtonComponent text="Login"/>
-          <span class="from-signup-text">New user? <RouterLink class="router-link" to="/signup">Create account</RouterLink></span>
+          <span class="from-signup-text">old user? <RouterLink class="router-link" to="/">Sign up</RouterLink></span>
       </section>
     </form>
   </div>
@@ -50,7 +52,7 @@ export default{
   /* border: 1px black solid; */
   background-color: #ffff84;
   height: 95%;
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
