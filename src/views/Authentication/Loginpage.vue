@@ -1,11 +1,15 @@
 <script>
 import ButtonComponent from '../../components/ButtonComponent.vue';
 import InputField from '../../components/InputField.vue';
-
 export default{
   components:{
     ButtonComponent,
     InputField,
+  },
+  methods:{
+    onPressLogin(){
+      this.$router.push({ name: 'Employees' });
+    }
   }
 }
 </script>
@@ -28,7 +32,7 @@ export default{
       <InputField :placeHolder="'Enter password'" :lable="'Password'" :icon="'fa-lock'" :type="'password'"/>
       </section>
       <section class="form-button-container">
-        <ButtonComponent text="Login"/>
+        <ButtonComponent text="Login" @onPress="onPressLogin"/>
           <span class="from-signup-text">New user? <RouterLink class="router-link" to="/signup">Create account</RouterLink></span>
       </section>
     </form>

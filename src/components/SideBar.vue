@@ -25,24 +25,24 @@ vue
 .sidebar ul {
   list-style: none;
   padding: 0;
+  
 }
 
 .sidebar li {
   margin-bottom: 30px;
+ 
+}
+
+.sidebar a {
+  padding: 10px;
+  border-radius: 5px;
   /* border:1px black solid; */
-  display:flex;
+   display:flex;
   align-items: center;
   justify-content: center;
 }
 
-.sidebar a {
-
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.sidebar li:hover {
+.sidebar a:hover {
   background-color: #ddd;
 
 }

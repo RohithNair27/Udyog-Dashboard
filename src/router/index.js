@@ -3,7 +3,7 @@ import Loginpage from "@/views/Authentication/Loginpage.vue";
 import SignupPage from "../views/Authentication/SignupPage.vue";
 import Employees from '../views/Main/Employees.vue'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: "/",

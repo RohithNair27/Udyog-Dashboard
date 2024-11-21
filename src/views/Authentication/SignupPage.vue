@@ -30,8 +30,8 @@ export default{
 
       </section>
       <section class="form-button-container">
-        <ButtonComponent text="Login"/>
-          <span class="from-signup-text">old user? <RouterLink class="router-link" to="/">Sign up</RouterLink></span>
+        <ButtonComponent text="Sign up"/>
+          <span class="from-signup-text">old user? <RouterLink class="router-link" to="/">Login</RouterLink></span>
       </section>
     </form>
   </div>
@@ -49,8 +49,7 @@ export default{
   width: 80%;
 }
 .Login-page-image-container {
-  /* border: 1px black solid; */
-  background-color: #ffff84;
+   background-color: #ffff84;
   height: 95%;
   width: 40%;
   display: flex;
@@ -98,7 +97,6 @@ display:flex;
   margin-top: 10px;
   display:flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 form section div {

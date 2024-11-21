@@ -1,10 +1,18 @@
 <template>
-    <button>
-        Login
+    <button @click.prevent="onClick">
+        {{ text }}
     </button>
 </template>
 
 <script>
+export default{
+    props:['text'],
+    methods:{
+        onClick(){
+            this.$emit('onPress')
+        }
+    }
+}
 </script>
 
 <style>
